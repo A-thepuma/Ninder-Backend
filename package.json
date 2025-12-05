@@ -1,0 +1,35 @@
+{
+  "name": "ninder-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-thepuma/Ninder-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/A-thepuma/Ninder-Backend/issues"
+  },
+  "homepage": "https://github.com/A-thepuma/Ninder-Backend#readme",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.1.0",
+    "better-auth": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.16.3",
+    "prisma": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "typescript": "^5.9.3"
+  }
+}
