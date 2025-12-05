@@ -4,13 +4,16 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { prisma } from "./prismaClient";
-import { toNodeHandler, fromNodeHeaders } from "better-auth/node"; // 👈 important
+import { toNodeHandler, fromNodeHeaders } from "better-auth/node"; 
 import { auth } from "./auth";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const allowedOrigins = ["http://localhost:4200"];
+const allowedOrigins = [
+  "http://localhost:4200",                 
+  process.env.FRONTEND_URL || "",          
+].filter(Boolean);
 
 // CORS 
 app.use(
